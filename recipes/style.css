@@ -1,0 +1,12 @@
+body {
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+header {
+	font-size: 32px;
+}
+form {
+	text-align: left;
+}

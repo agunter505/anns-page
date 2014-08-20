@@ -1,0 +1,163 @@
+/*Main color: #97D4AF*/
+/*Overall background color and fonts*/
+body {
+	background-color: #D3AF97;
+	font-family: verdana, arial, helvetica, sans-serif;
+	margin: auto;
+}
+header {
+	height: 2em;
+	font-size: 5em;
+	color: #FE73FE;
+	text-align: center;
+}
+p {
+	text-indent: 2em;
+}
+#content {
+	margin-left: 5em;
+	margin-right: 5em;
+	clear: both;
+}
+/*Formatting for photobox and images*/
+.photobox {
+	text-align: center;
+}
+.photobox p {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	font-size: 8pt; 
+	font-style: italic; 
+	background-color: #6F482E; 
+	margin: 10px 0px 10px 10px; 
+	border: solid black; 
+	border-width: 1px 4px 4px 1px; 
+	padding: 10px;
+}
+.photo {
+	display: block;
+}
+#content img {
+	border: 1px solid gray;
+}
+#inlinePhoto {
+	float: right;
+	margin: 0.5em 0em 0.5em 0.5em;
+}
+/*Menu items*/
+#menu {
+	overflow: auto;
+}
+#menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+#menu li {
+	background: -webkit-linear-gradient(#97D4AF, #DFF1E6 25%, #4EB677);
+  	background: -o-linear-gradient(#97D4AF, #DFF1E6 25%, #4EB677);
+  	background: -moz-linear-gradient(#97D4AF, #DFF1E6 25%, #4EB677);
+  	background: linear-gradient(#97D4AF, #DFF1E6 25%, #4EB677);
+	color: black;
+	display: inline;
+	float: left;
+	width: 20%;
+	margin-bottom: .5em;
+}
+#menu a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#menu a:hover {
+	background: -webkit-linear-gradient(#97D4AF, #DFF1E6 75%, #4EB677);
+  	background: -o-linear-gradient(#97D4AF, #DFF1E6 75%, #4EB677);
+  	background: -moz-linear-gradient(#97D4AF, #DFF1E6 75%, #4EB677);
+  	background: linear-gradient(#97D4AF, #DFF1E6 75%, #4EB677);
+  	border-left: 1px solid gray;
+  	border-right: 1px solid gray;
+  	color: #AF97D3;
+}
+/*Flipping list*/
+.flipList {
+	width: 15em;
+	background-color: #97D4AF;
+}
+.flip li {
+	list-style: none;
+}
+.flip a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.flipList:hover {
+	cursor: pointer;
+}
+/*Flipping squares*/
+.square {
+	background-color: white;
+	border: 1px solid black;
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin: 1px;
+}
+#squareWrapper {
+	width: 590px;
+	border: 1em ridge gray;
+	display: inline-block;
+}
+.square2 {
+	background-color: white;
+	border: 1px solid black;
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin: 1px;
+}
+#squareWrapper2 {
+	width: 156px;
+	border: 1em ridge gray;
+	display: inline-block;
+}
+.square3 {
+	float: left;
+}
+/*Definition List*/
+#defList {
+	width: 900px;
+	margin: auto;
+	text-align: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	clear: both;
+}
+dt {
+	cursor: pointer;
+	background: #AF97D3;
+	border-top: 1px solid #E6DEF1;
+	border-bottom: 1px solid #774FB4;
+}
+dt:first-child { 
+	border-top: none;
+}
+dt:nth-last-child(2) {
+	border-bottom: none;
+}
+dd {
+	background: #E6DEF1;
+	margin: 0;
+}
+.hide {
+	display: none;
+}
+
+
+
