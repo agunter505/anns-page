@@ -1,0 +1,47 @@
+body {
+	background: #FFEEDF;
+	
+}
+
+.img-bordered {
+	border: solid #eeeeee 2px;
+}
+
+.jumbotron {
+	background: #DFFBFE;
+	border: solid #eeeeee 2px;
+}
+/*Styling for nav pills*/
+.nav-pills > li > a:hover {
+	background: #DFFBFE;
+	border: solid #eeeeee 2px;
+}
+.nav-pills > li > a {
+	background: #FFEEDF;
+	border: solid #FFEEDF 2px;
+}
+
+/*add border and background to columns on front page*/
+.anns-box {
+	background: #DFFBFE;
+	border: solid #eeeeee 2px;
+}
+
+/*Styling for columns of same height*/
+.container-xs-height {
+	display: table;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.row-xs-height {
+	display: table-row;
+}
+.col-xs-height {
+	display: table-cell;
+	float: none;
+}
+
+/*styling for animated boxes*/
+.anns-wrapper {
+	padding: 3px;
+}
