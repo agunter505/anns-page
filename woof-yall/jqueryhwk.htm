@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>JQuery Homework</title>
+    <style>
+    .box {
+        width: 400px;
+        background: blue;
+        padding: 2em;
+        position: relative;
+    }
+
+    </style>
+</head>
+<body>
+
+
+<div class="box">
+    <h2>Some Content Here</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis sapien id nisi 
+        consectetur, a molestie tortor vestibulum. Mauris auctor magna et mollis tincidunt. Maecenas 
+        nec enim elit. Nulla et ligula a dui tempus semper a non augue. Cras aliquam sit amet odio non 
+        rutrum. Proin sit amet sapien quis nisl consectetur commodo quis in massa. Ut auctor eros id 
+        erat lobortis viverra. Nunc risus nisi, suscipit dignissim porttitor at, eleifend nec odio. 
+        Cras rhoncus tortor dolor, id auctor ante viverra ut.
+    </p>
+</div>
+
+<p><button>Increase</button></p>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+
+(function() {
+    var box = $('div.box');
+
+    $('button').on('click', function() {
+        $('.box').animate({
+            fontSize: '+=5'
+        }, {
+            duration: 500,
+            complete: function() {
+                console.log('completed');
+            }
+        });
+    });
+})();
+
+
+</script>
+</body>
+</html>
