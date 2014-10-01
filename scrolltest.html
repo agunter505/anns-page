@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ann's Page</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- background appears after section1 -->
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100-top"
+      data-anchor-target="#section1 + .gap"
+      data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div
+        class="parallax-image parallax-image-100-top"
+        style="background-image:url(img/sample1.png)"
+        data-anchor-target="#section1 + .gap"
+        data-bottom-top="transform: translate3d(0px, -75%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 75%, 0px);"
+      ></div>
+      <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
+    </div>
+    <!-- end post-section1 background -->
+    <!-- begin post-section2 background -->
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#section2 + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div
+        class="parallax-image parallax-image-100"
+        style="background-image:url(img/sample2.png)"
+        data-anchor-target="#section2 + .gap"
+        data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+      ></div>
+    </div>
+    <!-- end post-section2 background -->
+    <!-- begin post-section3 background -->
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-50"
+      data-anchor-target="#section3 + .gap"
+      data-bottom-top="transform:translate3d(0px, 300%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div
+        class="parallax-image parallax-image-50"
+        style="background-image:url(img/sample3.png)"
+        data-anchor-target="#section3 + .gap"
+        data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+      ></div>
+    </div>
+    <!-- end post-section3 background -->
+    <!-- begin skrollr-body, this the part that moves normally with scroll bar -->
+    <div id="skrollr-body">
+      <!-- section1 -->
+        <!-- begin nav-pills container -->
+        <div class="container" id="section1">
+          <ul class="nav nav-pills">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="projects.html">Ann's Projects</a></li>
+          </ul>
+        </div>
+        <!-- end nav-pills container -->
+      <!-- end section1 -->
+      <!-- gap -->
+      <div class="gap gap-100-top container" style="background-image:url(img/sample1.png);">
+        <div class="annContainer">
+          <div class="annContent">
+            <h1>Ann's Story</h1>
+          </div>
+        </div>
+      </div>
+      <!-- end gap -->
+      <!-- section2 -->
+      <div class="content container" id="section2">
+        <p>Landjaeger chicken ham fatback sausage hamburger, tri-tip capicola pastrami pancetta ribeye turducken. Rump shank turkey pig kevin sausage meatloaf tenderloin drumstick short ribs short loin. Prosciutto spare ribs chuck, pork strip steak pork chop swine bacon turkey shoulder andouille. Jowl landjaeger chicken corned beef. Ham hock kielbasa pancetta ground round sausage. Spare ribs porchetta pastrami filet mignon drumstick ball tip. Beef ribs prosciutto kevin, landjaeger shoulder ham hock ham brisket sirloin chuck t-bone drumstick kielbasa pork chop.</p>
+
+        <p>Landjaeger spare ribs chicken ball tip, filet mignon frankfurter ribeye tenderloin corned beef. Strip steak boudin pork loin, chicken turkey ball tip beef ribs ground round shank ham hock. Kevin capicola beef, chuck pork chop shoulder brisket doner meatloaf shank ham hock tenderloin. Chuck ham hock short ribs ground round sausage prosciutto shoulder bacon andouille tri-tip beef biltong filet mignon chicken. Pork belly andouille shank, bacon sausage meatloaf bresaola pork chop short ribs t-bone. Ham hock salami porchetta bacon beef turkey, strip steak kielbasa pancetta brisket meatball t-bone.</p>
+
+        <p>Chicken pancetta capicola chuck, turkey meatball jerky frankfurter kielbasa ball tip bacon ground round. Beef ribs brisket meatloaf short ribs landjaeger shankle spare ribs sausage, pancetta swine sirloin flank. Tail shank chuck pancetta, ham meatloaf short ribs sausage rump turkey kevin pork chop landjaeger. Doner boudin short ribs t-bone, jerky shankle bresaola drumstick. Strip steak shank spare ribs boudin doner short ribs. Boudin prosciutto jowl tenderloin tongue beef ribs, short ribs salami short loin strip steak ham jerky. Shank pancetta beef ribs, corned beef ham hock pork belly drumstick tail bresaola chuck.</p>
+      </div>
+      <!-- end section2 -->
+      <!-- gap -->
+      <div class="gap gap-100" style="background-image:url(img/sample2.png);"></div>
+      <!-- end gap -->
+      <!-- section3 -->
+      <div class="content content-full container" id="section3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="gap gap-50" style="background-image:url(img/sample3.png);"></div>
+      <div class="content container" id="done">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <!-- end skrollr-body -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/ann.js"></script>
+    <script type="text/javascript">
+      skrollr.init({
+        smoothScrolling: false,
+        mobileDeceleration: 0.004
+      });
+    </script>
+  </body>
+</html>
