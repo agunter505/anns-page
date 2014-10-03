@@ -137,8 +137,8 @@ html, body {
 	box-sizing:border-box;
 }
 
-.content-full {
-	height:100%;
+.content-half {
+	height:50%;
 }
 
 #done {
@@ -170,16 +170,22 @@ html, body {
 
 /*style for overlay content in scrolling*/
 .annContainer {
-	display: table;
+	/*display: table;
 	table-layout: fixed;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	position: relative;
+	position: relative;*/
 	
 }
 
 .annContent {
-	display: table-cell;
-	vertical-align: bottom;
+	text-align: right;
+	/*display: table-cell;
+	vertical-align: bottom;*/
+}
+
+/*text*/
+.italic {
+	font-style: italic;
 }
