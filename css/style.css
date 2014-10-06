@@ -137,13 +137,13 @@ html, body {
 	box-sizing:border-box;
 }
 
-.content-half {
-	height:50%;
-}
-
-#done {
+.content-full {
 	height:100%;
 }
+
+/*#done {
+	height:100%;
+}*/
 
 .centered-header {
 	width: 100%;
@@ -188,4 +188,30 @@ html, body {
 /*text*/
 .italic {
 	font-style: italic;
+}
+
+.pstory {
+	font-size: 25px;
+	text-indent: 2em;
+	padding-top: 2em;
+}
+
+.hstory {
+	font-size: 60px;
+}
+
+.imgstory {
+	float: right;
+	clear: right;
+}
+
+.filler {
+	height: 150px;
+	width: 1px;
+	float: right;
+	clear: right;
+}
+
+.fillerwrap {
+	float: right;
 }

@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Testing</title>
+	<style>
+		.myID, .firstSquare {
+			background: red;
+			height: 58px;
+			width: 58px;
+			float: left;
+			margin: 1px;
+		}
+
+		.firstSquare {
+			clear: left;
+		}
+		.newdiv {
+			background: purple;
+			height: 50px;
+			width: 50px;
+		}
+		#displayEntry {
+			height: 2em;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h3>Enter a number between 1 and 10 to set the size</h3>
+		<p><input type="text" id="setSize"></p>
+		<button id="addSquares">Set</button>
+		<button id="removeSquares">Reset</button>
+	</form>
+	<div id="displayEntry">
+	</div>
+	<div id="parentDiv">
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+
+		(function() {
+
+			$("#addSquares").click( function() {
+
+				/*declare variables and set counter*/
+				var myID = $(".myID");
+					firstSquare = $(".firstSquare");
+					message = $("#message");
+					setSize = $("#setSize");
+					parentDiv = $('#parentDiv');
+					counter = setSize.val();
+
+				/*reset the area and message by removing items*/
+				myID.remove();
+				firstSquare.remove();
+				message.remove();
+
+				/*prevents button click from reloading page*/
+				event.preventDefault();
+
+				/*validate entry to be between one and ten*/
+				if ( counter <= 10 && counter >= 1) {
+
+					/*displays the grid size*/
+					$("#displayEntry").append("<p id='message'>");
+					$("#message").append("You entered " + counter);
+
+					/*adds a row and column for each iteration*/
+					for (i = 0; i < counter; i++) {
+						for (j = 0; j < counter; j++) {
+							if (j === 0) {
+							parentDiv.append("<div class='firstSquare'>");
+							} else {
+							parentDiv.append("<div class='myID'>");
+							};
+						};
+					};
+				} else {
+					alert("Please enter a number between one and ten.");
+				};
+
+				/*after running, removes value from text box*/
+				setSize.val("");
+
+			});
+
+			$("#removeSquares").click( function() {
+
+				/*set variables*/
+				var myID = $(".myID");
+					firstSquare = $(".firstSquare");
+					message = $("#message");
+					setSize = $("#setSize");
+
+				/*prevents button click from reloading page*/
+				event.preventDefault();
+				/*removed all divs added by the button and removes the value from the field*/
+				myID.remove();
+				firstSquare.remove();
+				message.remove();
+				myName.val("");
+			});
+		}) ();
+
+
+
+
+		
+	</script>
+</body>
+</html>

@@ -15,4 +15,16 @@
 
   $('p.intro1').load( 'aboutme.html .annintro');
 
+  function doggy( picID, picA, picB, period) {
+    var picElem = document.getElementById( picID ), state = false;
+
+    function f() {
+      picElem.src = ( state ^= true ) ? picB : picA ;
+    }
+
+    setInterval( f, period );
+  }
+
+  doggy( 'doggypics', 'img/doggy1.jpg', 'img/doggy2.jpg', 250);
+
 } ) ();
