@@ -15,42 +15,58 @@
 
 } ) ();
 
-
 /*
-Functions for animated squares on projects page
+Functions for building squares on projects page
 */
 
 (function() {
 
-  /*sets size of grid on click of set button*/
+  var parentDiv = $('#parentDiv');
+
+  /*sets size of grid on change of setSize button*/
   $("#setSize").on('change', function(event) {
-
-    /*declare variables and set counter*/
-    var annSquare = $(".annSquare");
-      firstSquare = $(".firstSquare");
-      setSize = $("#setSize");
-      parentDiv = $('#parentDiv');
-      counter = setSize.val();
-
+    /*get value for counter*/
+    var rowCounter = $("#setSize").val();
+    var colCounter = $("#columns").val();
     /*reset the area by removing divs*/
-    annSquare.remove();
-    firstSquare.remove();
+    $(".annSquare").remove();
+    $(".firstSquare").remove();
+    /*creates the squares*/
+    createSquares(rowCounter, colCounter);
+  });
 
-    /*i sets columns and j sets rows*/
-    for (i = 0; i < counter; i++) {
-      for (j = 0; j < counter; j++) {
+   /*sets size of grid on change of setSize button*/
+  $("#columns").on('change', function(event) {
+    /*get value for counter*/
+    var rowCounter = $("#setSize").val();
+    var colCounter = $("#columns").val();
+    /*reset the area by removing divs*/
+    $(".annSquare").remove();
+    $(".firstSquare").remove();
+    /*creates the squares*/
+    createSquares(rowCounter, colCounter);
+  });
+
+  /*function to create squares, i controls rows, j controls columns*/
+  function createSquares(rowCounter, colCounter) {
+    for (i = 0; i < rowCounter; i++) {
+      for (j = 0; j < colCounter; j++) {
         if (j === 0) {
-        parentDiv.append("<div class='firstSquare anisquare'>");
+          /*first square of each row given different class for css clearing*/
+          parentDiv.append("<div class='firstSquare anisquare'>");
         } else {
-        parentDiv.append("<div class='annSquare anisquare'>");
+          parentDiv.append("<div class='annSquare anisquare'>");
         };
       };
     };
-  });
+  }
+
 }) ();
 
+/*
+Functions for animating squares on projects page
+*/
 
-/*all functions related to animation of squares on project page*/
 (function() {
 
   /*on click of anibutton runs getAnimation function, which sets the animation of the squares based on the selected radio button*/
