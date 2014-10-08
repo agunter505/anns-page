@@ -41,15 +41,6 @@ body {
 	float: none;
 }
 
-/*styling for animated boxes*/
-.anns-wrapper {
-	padding: 3px;
-}
-.aniwrap {
-	background: #DFFBFE;
-}
-
-
 /*CSS for scrolling stuff*/
 
 html, body {
@@ -181,6 +172,7 @@ html, body {
 
 .annContent {
 	text-align: right;
+	/*to display at bottom of area*/
 	/*display: table-cell;
 	vertical-align: bottom;*/
 }
@@ -214,4 +206,22 @@ html, body {
 
 .fillerwrap {
 	float: right;
+}
+
+
+/*style for animated squares on projects page*/
+.annSquare, .firstSquare {
+	background: red;
+	height: 38px;
+	width: 38px;
+	float: left;
+	margin: 1px;
+}
+
+.firstSquare {
+	clear: left;
+}
+
+#displayEntry {
+	height: 2em;
 }

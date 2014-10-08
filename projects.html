@@ -32,49 +32,49 @@
     <div class="container">
       <!-- begin row -->
       <div class="row">
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
+
+        <form>
+          <div id="hidediv">
+            <p>Select the type of animation.</p>
+            <p><input 
+              type="radio" 
+              name="anitype" 
+              value="spin" 
+              class="anibutton" 
+              id="spinButton"> Spin</p>
+            <p><input 
+              type="radio" 
+              name="anitype" 
+              value="hFlip"
+              class="anibutton"
+              id="hFlipButton"> Horizontal Flip</p>
+            <p><input 
+              type="radio" 
+              name="anitype" 
+              value="vFlip"
+              class="anibutton"
+              id="vFlipButton"> Vertical Flip</p>
           </div>
+          <button id="resetAnimation">Reset Animation</button>
+          <p>Enter a number between 1 and 10 to set the size of the grid.</p>
+          <p><select name="gridsize" id="setSize">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></p>
+          <button id="setSquares">Set</button>
+          <button id="resetSquares">Reset</button> </br></br>
+        </form>
+        <div id="displayEntry">
         </div>
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
-        </div>
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
-        </div>
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
-        </div>
-      </div>
-      <!-- end row -->
-      <!-- begin row -->
-      <div class="row">
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
-        </div>
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
-        </div>
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
-        </div>
-        <div class="col-xs-1 anns-wrapper">
-          <div class="aniwrap">
-            <img src="img/paw.png" alt="paw" class='img-responsive'>
-          </div>
+        <div id="parentDiv">
         </div>
       </div>
       <!-- end row -->
@@ -84,8 +84,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.transit.js'></script>
     <script src="js/plugin.js"></script>
     <script src="js/ann.js"></script>
+
 
   </body>
 </html>

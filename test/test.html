@@ -2,7 +2,7 @@
 <head>
 	<title>Testing</title>
 	<style>
-		.myID, .firstSquare {
+		.annSquare, .firstSquare {
 			background: red;
 			height: 58px;
 			width: 58px;
@@ -13,11 +13,7 @@
 		.firstSquare {
 			clear: left;
 		}
-		.newdiv {
-			background: purple;
-			height: 50px;
-			width: 50px;
-		}
+
 		#displayEntry {
 			height: 2em;
 		}
@@ -27,8 +23,8 @@
 	<form>
 		<h3>Enter a number between 1 and 10 to set the size</h3>
 		<p><input type="text" id="setSize"></p>
-		<button id="addSquares">Set</button>
-		<button id="removeSquares">Reset</button>
+		<button id="setSquares">Set</button>
+		<button id="resetSquares">Reset</button>
 	</form>
 	<div id="displayEntry">
 	</div>
@@ -40,10 +36,10 @@
 
 		(function() {
 
-			$("#addSquares").click( function() {
+			$("#setSquares").click( function() {
 
 				/*declare variables and set counter*/
-				var myID = $(".myID");
+				var annSquare = $(".annSquare");
 					firstSquare = $(".firstSquare");
 					message = $("#message");
 					setSize = $("#setSize");
@@ -51,7 +47,7 @@
 					counter = setSize.val();
 
 				/*reset the area and message by removing items*/
-				myID.remove();
+				annSquare.remove();
 				firstSquare.remove();
 				message.remove();
 
@@ -71,7 +67,7 @@
 							if (j === 0) {
 							parentDiv.append("<div class='firstSquare'>");
 							} else {
-							parentDiv.append("<div class='myID'>");
+							parentDiv.append("<div class='annSquare'>");
 							};
 						};
 					};
@@ -84,10 +80,10 @@
 
 			});
 
-			$("#removeSquares").click( function() {
+			$("#resetSquares").click( function() {
 
 				/*set variables*/
-				var myID = $(".myID");
+				var annSquare = $(".annSquare");
 					firstSquare = $(".firstSquare");
 					message = $("#message");
 					setSize = $("#setSize");
@@ -95,7 +91,7 @@
 				/*prevents button click from reloading page*/
 				event.preventDefault();
 				/*removed all divs added by the button and removes the value from the field*/
-				myID.remove();
+				annSquare.remove();
 				firstSquare.remove();
 				message.remove();
 				myName.val("");
