@@ -23,10 +23,10 @@ Functions for building squares on projects page
 
   var parentDiv = $('#parentDiv');
 
-  /*sets size of grid on change of setSize button*/
-  $("#setSize").on('change', function(event) {
+  /*sets size of grid on change of rows button*/
+  $("#rows").on('change', function(event) {
     /*get value for counter*/
-    var rowCounter = $("#setSize").val();
+    var rowCounter = $("#rows").val();
     var colCounter = $("#columns").val();
     /*reset the area by removing divs*/
     $(".annSquare").remove();
@@ -35,10 +35,10 @@ Functions for building squares on projects page
     createSquares(rowCounter, colCounter);
   });
 
-   /*sets size of grid on change of setSize button*/
+   /*sets size of grid on change of rows button*/
   $("#columns").on('change', function(event) {
     /*get value for counter*/
-    var rowCounter = $("#setSize").val();
+    var rowCounter = $("#rows").val();
     var colCounter = $("#columns").val();
     /*reset the area by removing divs*/
     $(".annSquare").remove();
@@ -61,33 +61,24 @@ Functions for building squares on projects page
     };
   }
 
-}) ();
+  /*
+  Functions for animating squares on projects page
+  */
 
-/*
-Functions for animating squares on projects page
-*/
-
-(function() {
-
-  /*on click of anibutton runs getAnimation function, which sets the animation of the squares based on the selected radio button*/
+  /*on click of a radio button (anibutton), runs getAnimation function, which sets the animation of the squares based on the selected radio button*/
   $(".anibutton").on('click', getAnimation);
 
-  function getAnimation() {
-    /*gets the selected radio button*/
+  /*gets the selected radio button then uses a switch statement based on the value of the selected radio button and gets the spin, hflip or vflip function*/
+  function getAnimation() {  
     var selected = $("input[type='radio'][name='anitype']:checked");
-
-    /* switch statement controlled by the value of the selected radio button*/
     switch (selected.val()) {
       case "spin":
-        /*calls spin function*/
         spin();
         break;
       case "hFlip":
-        /*calls hflip function*/
         hFlip();
         break;
       case "vFlip":
-        /*calls vflip function*/
         vFlip();
         break;
       default:
@@ -95,21 +86,20 @@ Functions for animating squares on projects page
     };
   };
 
-  function spin() {
-    /*removes mouseenter bind*/
-    $("#parentDiv").off('mouseenter');
-    /*spins squares on mouseenter and resets other transitions*/
-    $("#parentDiv").on('mouseenter', '.anisquare', function() {
-      $(this)
-        .removeAttr('style')
-        .transition( {rotate: '360deg', perspective: '0px', rotateX:'0deg', rotateY:'0deg'} )
-    } );
+  /*removes current mouseenter bind then adds one to spins squares on mouseenter. Also resets other transitions*/
+  function spin() {  
+    parentDiv
+      .off('mouseenter')
+      .on('mouseenter', '.anisquare', function() {
+        $(this)
+          .removeAttr('style')
+          .transition( {rotate: '360deg', perspective: '0px', rotateX:'0deg', rotateY:'0deg'} )
+      } );
   };
 
-  function hFlip() {
-    /*removes mouseenter bind*/
+  /*removes current mouseenter bind then adds one to flip squares along x axis on mouseenter. Also resets other transitions*/
+  function hFlip() {  
     $("#parentDiv").off('mouseenter');
-    /*flips squares on the x axis on mouseenter and resets other transitions*/
     $("#parentDiv").on('mouseenter', '.anisquare', function() {
       $(this)
         .removeAttr('style')
@@ -117,15 +107,14 @@ Functions for animating squares on projects page
     } );
   };
 
+  /*removes current mouseenter bind then adds one to flip squares along y axis on mouseenter. Also resets other transitions*/
   function vFlip() {
-    /*removes mouseenter bind*/
     $("#parentDiv").off('mouseenter');
-    /*flips squares on the y axis on mouseenter and resets other transitions*/
     $("#parentDiv").on('mouseenter', '.anisquare', function() {
       $(this)
         .removeAttr('style')
         .transition( {perspective: '100px', rotateY:'180deg', rotateX:'0deg', rotate:'0deg' } )
     } );
   };
-}) ();
-
+}) (); /*end function*/
+/*end all*/
