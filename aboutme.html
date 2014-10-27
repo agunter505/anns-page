@@ -19,43 +19,130 @@
     <![endif]-->
   </head>
   <body>
-    <!-- begin nav-pills container -->
-    <div class="container">
-      <ul class="nav nav-pills">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="projects.html">Ann's Projects</a></li>
-      </ul>
+    <!-- background appears after section1 -->
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#section1 + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+      <div
+        class="parallax-image parallax-image-100"
+        style="background-image:url(img/anndrawing1.jpg)"
+        data-anchor-target="#section1 + .gap"
+        data-bottom-top="transform: translate3d(0px, -100%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 100%, 0px);"
+      ></div>
+      <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
     </div>
-    <!-- end nav-pills container -->
-    <!-- begin content container -->
-    <div class="container anns-box">
-      <div class="row">
-        <p class="lead">
-          <span class="annintro">There once was a girl named Ann who loved art and animals.  After she graduated high school, she set out for college on her way to become a veterinarian.</span>  While at school, she decided to take advantage of the opportunities around her and began working towards a degree in art. She was accepted to the art program based on her portfolio and she continued taking biology courses towards her goal of becoming a veterinarian.
-        </p>
-        <p>
-          Things got complicated pretty quickly, however, and due to family problems Ann was forced to leave school.  So, she set out to find herself a job in the “real world”.  Fortune smiled on her and she was hired on at Biotech Inc. where she could use her biology skills.  Ann loved her job and coworkers, even though the hours were long.  Even better, Ann had found a job at a company that had a real impact and helped people across the globe.  Ann worked hard at her new job and quickly gained notice.  She found time to return to school and completed a degree in Biology to help advance her new career.  Life was good.
-        </p>
-        <p>
-          After finishing her degree, Ann was ready for new challenges. She successfully applied for a position managing a small team and soon after moved up again.  Before long, she had a team of over 20 technicians.  She became an expert on biotech regulations and procedures and learned to juggle multiple projects to get everything done on time.
-        </p>
+    <!-- end post-section1 background -->
+    <!-- begin post-section2 background -->
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#section2 + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-Unfortunately, every story has a villain, and this one is no different - it’s the big, bad enforcement division (BBED).  Biotech businesses must answer to the enforcement division.  As mentioned earlier, Biotech, Inc. work helped people across the globe.  Unfortunately, badly managed or corrupt biotech companies can hurt a lot of innocent people.  The big, bad enforcement division is necessary to combat this, but it is made of people like any other group and is far from perfect in achieving it’s mission.<br>
+      <div
+        class="parallax-image parallax-image-100"
+        style="background-image:url(img/anndrawing2.jpg)"
+        data-anchor-target="#section2 + .gap"
+        data-bottom-top="transform: translate3d(0px, -100%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 100%, 0px);"
+      ></div>
+    </div>
+    <!-- end post-section2 background -->
+    <!-- begin post-section3 background -->
+    <div
+      class="parallax-image-wrapper parallax-image-wrapper-100"
+      data-anchor-target="#section3 + .gap"
+      data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+      data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-Ann first became aware of the BBED early in her career.  The BBED had visited a few months before she began her job.  They had issued several citations during their visit regarding issues they found or improvements they felt were necessary.  Three months after Ann began her job at Biotech, Inc. the BBED shut the company down and Ann was let go.  Just a few months after that Biotech, Inc. worked out it’s issues with the BBED and the company was allowed to do business again.  Ann was rehired and continued with her career.<br>
-
-Brushes with the BBED are common in the biotech industry.  There are many variables, regulations are vague and it seems everyone has a different interpretation of the rules.  It’s hard to pour your heart and soul into your work only to be told oh no, that’s not how we meant that.  Sometimes issues were easy to fix, sometimes not.  During her years working at Biotech, Inc. Ann saw the BBED visit many times.  Biotech, Inc always survived, but there was always a cost.  Just as Ann had lost her job shortly after starting, another group of employees - nearly a third of the company - was cut at another time.  Ann survived and continued the fight to satiate the BBED.<br>
-
-Ann and her husband decided it was time for a change.  They saved up money and started learning new skills.  Ann’s husband then got a great job in a far away land and they jumped on the opportunity.  With her husband’s new career and the money she had saved, Ann left Biotech, Inc and ended her battle with the BBED.  They moved to a far away land and Ann decided to look for a new direction - web design and development.  She still loves art and draws frequently, but working at Biotech, Inc gave her great skills in project management, problem solving and teamwork.  This new direction is a great combination of Ann’s skills and interests.  Now she spends her time picking colors, drawing pictures and learning programming languages.  The BBED is just a shadow in the past, the stuff of occasional nightmares and Ann and her husband lived happily ever after.
-</p>
+      <div
+        class="parallax-image parallax-image-100"
+        style="background-image:url(img/anndrawing3.jpg)"
+        data-anchor-target="#section3 + .gap"
+        data-bottom-top="transform: translate3d(0px, -100%, 0px);"
+        data-top-bottom="transform: translate3d(0px, 100%, 0px);"
+      ></div>
+    </div>
+    <!-- end post-section3 background -->
+    
+    <!-- begin skrollr-body, this the part that moves normally with scroll bar -->
+    <div id="skrollr-body">
+      <!-- section1 -->
+        <!-- begin nav-pills container -->
+        <div class="container" id="section1">
+          <ul class="nav nav-pills">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="projects.html">Ann's Projects</a></li>
+          </ul>
+        </div>
+        <!-- end nav-pills container -->
+      <!-- end section1 -->
+      <!-- gap1 -->
+      <div class="gap gap-100 container" style="background-image:url(img/anndrawing1.jpg);">
+        <div class="annContainer">
+          <div class="annContent">
+            <h1 class="italic hstory">Ann's Story</h1>
+          </div>
+        </div>
       </div>
+      <!-- end gap1 -->
+      <!-- section2 -->
+      <div class="content-full container" id="section2">
+        <br>
+        <div class="filler"></div>
+        <img src="img/godawgs.jpg" id="godawgs" class="img-responsive imgstory">
+        <p class="pstory">Once upon a time there was a girl named Ann.  She loved animals, so after high school she set off for the University of Georgia to become a veterinarian.  While she was at school, she learned about other degree programs and starting taking art classes.</p>
+        <br>
+        <p class="pstory">  At the end of the year, she passed a portfolio review and was accepted into the art school.  She still wanted to be a veterinarian, so she continued taking biology classes too.  She also found a job in a lab on campus, prepping samples and cleaning glassware.  She was having a great time and learned a lot.</p>
+      </div>
+      <!-- end section2 -->
+      <!-- gap2 -->
+      <div class="gap gap-100" style="background-image:url(img/anndrawing2.jpg);"></div>
+      <!-- end gap2 -->
+      <!-- section3 -->      
+      <div class="content content-full container" id="section3">
+        <br>
+        <div class="filler"></div>
+        <img src="img/ladder.jpg" id="ladder" class="img-responsive imgstory">
+        <p class="pstory">After three years at school, life took a turn for Ann.  For family reasons, she had to leave school and set out to find a job.  Luckily, she found Biotech, Inc. where she was offered an entry-level, full time job.  The hours were long, but Ann enjoyed her work.  Biotech, Inc. made products that helped people across the globe.  Ann worked hard and started moving up the corporate ladder.</p>
+        <br>
+        <p class="pstory">
+          She also returned to school and completed a degree in Biology.
+        </p>
+      </div>
+      <!-- end section3 -->
+      <!-- gap3 -->
+      <div class="gap gap-100" style="background-image:url(img/dog3.jpg);"></div>
+      <!-- end gap3 -->
+      <!-- begin final section -->
+      <div class="content-full container">
+        <p class="pstory">Time can go by quickly, and before she knew it 12 years had passed by.  Most of the years were good, but working for Biotech, Inc. was never easy.  Even the smallest mistake can be a big deal and every decision is closely scrutinized.  It’s a necessary part of the business, but after time it can wear a person down.  Ann began to explore other careers and learned about web development and design.</p>
+        <br>
+        <p class="pstory">It was around this time that Ann’s husband Jimmy was offered a great job, but it was on the other side of the country.  Ann and Jimmy decided the time was right and Ann bid farewell to all her friends at Biotech, Inc.  They packed up their things, tossed the dog in the car and headed west.</p>
+        <p class="pstory">Find out what happens next!</p>
+        <button class="btn">Contact Ann</button>
+      </div>
+      <!-- end final section -->
     </div>
-    <!-- end content container -->
+    <!-- end skrollr-body -->
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script src="js/ann.js"></script>
+    <script type="text/javascript">
+      skrollr.init({
+        smoothScrolling: false,
+        mobileDeceleration: 0.004
+      });
+    </script>
   </body>
 </html>
