@@ -20,32 +20,36 @@ Functions for building squares on projects page
 */
 
 (function() {
-
+  /*set variables*/
   var parentDiv = $('#parentDiv');
+      rows = $("#rows");
+      columns = $("#columns");
 
   /*sets size of grid on change of rows button*/
-  $("#rows").on('change', function(event) {
+  rows.on('change', function(event) {
     /*get value for counter*/
-    var rowCounter = $("#rows").val();
-    var colCounter = $("#columns").val();
-    /*reset the area by removing divs*/
-    $(".annSquare").remove();
-    $(".firstSquare").remove();
-    /*creates the squares*/
+    var rowCounter = rows.val();
+    var colCounter = columns.val();
+    /*reset the area by removing divs, if present, then create squares*/
+    removeSquares();
     createSquares(rowCounter, colCounter);
   });
 
    /*sets size of grid on change of rows button*/
-  $("#columns").on('change', function(event) {
+  columns.on('change', function(event) {
     /*get value for counter*/
-    var rowCounter = $("#rows").val();
-    var colCounter = $("#columns").val();
-    /*reset the area by removing divs*/
-    $(".annSquare").remove();
-    $(".firstSquare").remove();
-    /*creates the squares*/
+    var rowCounter = rows.val();
+    var colCounter = columns.val();
+    /*reset the area by removing divs, if present, then create squares*/
+    removeSquares();
     createSquares(rowCounter, colCounter);
   });
+
+  /*function to remove squares*/
+  function removeSquares() {
+    $(".annSquare").remove();
+    $(".firstSquare").remove();
+  };
 
   /*function to create squares, i controls rows, j controls columns*/
   function createSquares(rowCounter, colCounter) {
@@ -59,7 +63,7 @@ Functions for building squares on projects page
         };
       };
     };
-  }
+  };
 
   /*
   Functions for animating squares on projects page

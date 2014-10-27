@@ -30,59 +30,69 @@
     <!-- end nav-pills container -->
     <!-- begin content container -->
     <div class="container">
-      <!-- begin row -->
+      <!-- begin row for form -->
       <div class="row">
+        <!-- begin form -->
         <form>
-          <div id="hidediv">
-            <p>Select the type of animation.</p>
-            <p><input 
-              type="radio" 
-              name="anitype" 
-              value="spin" 
-              class="anibutton" 
-              id="spinButton"> Spin</p>
-            <p><input 
-              type="radio" 
-              name="anitype" 
-              value="hFlip"
-              class="anibutton"
-              id="hFlipButton"> Horizontal Flip</p>
-            <p><input 
-              type="radio" 
-              name="anitype" 
-              value="vFlip"
-              class="anibutton"
-              id="vFlipButton"> Vertical Flip</p>
+          <div class="row">
+            <div class="col-xs-4">
+              Select the type of animation.
+              <div class="radio">
+                <label>
+                  <input type="radio" name="anitype" value="spin" class="anibutton" id="spinButton"> 
+                  Spin
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="anitype" value="hFlip" class="anibutton" id="hFlipButton">
+                  Horizontal Flip
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="anitype" value="vFlip" class="anibutton" id="vFlipButton"> 
+                  Vertical Flip
+                </label>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              Rows: <select class="form-control" id="rows">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="col-xs-2">
+              Columns: <select class="form-control" id="columns">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
           </div>
-          <p>Rows: <select name="rows" id="rows">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-
-          &nbsp; Columns: <select name="columns" id="columns">
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select></p>
-
         </form>
+        <!-- end form -->
+      </div>
+      <!-- end row -->
+      <!-- begin row for animated squares -->
+      <div class="row">
         <div id="parentDiv">
         </div>
       </div>
